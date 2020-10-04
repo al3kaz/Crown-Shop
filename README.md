@@ -1,10 +1,10 @@
 I'm building E-commerce app in React with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase
 
-Według liczb
-
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
 
 ### `npm start`
 
