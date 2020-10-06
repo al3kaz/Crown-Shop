@@ -1,60 +1,68 @@
 .menu-item {
+   min-width: 30%;
+   height: 240px;
+   flex: 1 1 auto;
    display: flex;
-   flex-basis: 30%;
-   flex-grow: 1;
-   justify-content: center;
    align-items: center;
-   border: solid 1px black;
-   margin: 10px;
-   height: 30vh;
-   background-position: center;
-   background-size: cover;
+   justify-content: center;
+   border: 1px solid black;
+   margin: 0 7.5px 15px;
    overflow: hidden;
-
-      &.large {
-         height: 380px;
-      }
-
-      &:hover {
-         cursor: pointer;
-
-         & .background-image {
-            transform: scale(1.1);
-            transition: transform 5s;
-         }
-
-         & .content {
-            opacity: 0.9;
-         }
-      }
-
-      & .background-image {
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      }
-
-      & .content {
-         position: relative;
-         height: auto;
-         position: absolute;
-         border: solid 1px black;
-         padding: 10px 20px;
-         color: black;
-         text-align: center;
-         background-color: #fff;
-         opacity: 0.7;
-         }
-      
-      .title {
-         margin: 10px;
-         opacity: 0.7;
-      }
-      
-      .subtitle {
-         font-size: 20px;
-         opacity: 0.7;
-      }
-
-}
+ 
+   &:hover {
+     cursor: pointer;
+ 
+     & .background-image {
+       transform: scale(1.1);
+       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+     }
+ 
+     & .content {
+       opacity: 0.9;
+     }
+   }
+ 
+   &.large {
+     height: 380px;
+   }
+ 
+   &:first-child {
+     margin-right: 7.5px;
+   }
+ 
+   &:last-child {
+     margin-left: 7.5px;
+   }
+ 
+   .background-image {
+     width: 100%;
+     height: 100%;
+     background-size: cover;
+     background-position: center;
+   }
+ 
+   .content {
+     height: 90px;
+     padding: 0 25px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid black;
+     background-color: white;
+     opacity: 0.7;
+     position: absolute;
+ 
+     .title {
+       font-weight: bold;
+       margin: 0 6px 0;
+       font-size: 22px;
+       color: #4a4a4a;
+     }
+ 
+     .subtitle {
+       font-weight: lighter;
+       font-size: 16px;
+     }
+   }
+ }

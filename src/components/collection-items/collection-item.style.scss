@@ -1,24 +1,32 @@
 .collection-item {
-   display: flex;
    width: 22%;
-   height: 300px;
-   padding: 20px;
+   display: flex;
    flex-direction: column;
+   height: 350px;
    align-items: center;
-
-
-   & .image {
-      width: 100%;
-      height: 95%;
-      background-position: center;
-      background-size: cover;
+ 
+   .image {
+     width: 100%;
+     height: 95%;
+     background-size: cover;
+     background-position: center;
+     margin-bottom: 5px;
    }
-
-   & .collection-footer {
-      display: flex;
-      width: 100%;
-      height: 30px;
-      font-size: 18px;
-      justify-content: space-between;
+ 
+   .collection-footer {
+     width: 100%;
+     height: 5%;
+     display: flex;
+     justify-content: space-between;
+     font-size: 18px;
+ 
+     .name {
+       width: 90%;
+       margin-bottom: 15px;
+     }
+ 
+     .price {
+       width: 10%;
+     }
    }
-}
+ }
