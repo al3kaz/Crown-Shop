@@ -1,6 +1,6 @@
 I'm building E-commerce app in React with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase
 
-[Live Demo](https://cr0wn-shop.herokuapp.com/checkout)
+[Live Demo](https://cr0wn-shop.herokuapp.com)
 
 ## Available Scripts
 
