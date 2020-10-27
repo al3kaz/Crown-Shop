@@ -21,8 +21,7 @@ class App extends Component {
   unsubscribeFromAuth = null
 
   componentDidMount() {
-
-    const { setCurrentUser } = this.props
+    const { setCurrentUser} = this.props
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -30,19 +29,16 @@ class App extends Component {
 
         userRef.onSnapshot(snapShot => {
           setCurrentUser({
-            currentUser: {
               id: snapShot.id,
               ...snapShot.data()
-            }
-          },
-          )
-
-        })
-      } else {
-        setCurrentUser(userAuth)
+          });
+        });
       }
-    })
-  };
+        setCurrentUser(userAuth);
+    });
+}
+
+
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
@@ -63,7 +59,7 @@ class App extends Component {
 }
 
 const mapStateToProps = createStructuredSelector ({
-  currentUser: selectCurrentUser
+  currentUser: selectCurrentUser,
 })
 
 const mapDispatchToProps = (dispatch) => ({
