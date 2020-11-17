@@ -18,6 +18,20 @@ position: relative;
      display: flex;
    }
  }
+
+ @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+   .image {
+     opacity: unset;
+   }
+   button {
+     opacity: unset;
+   }
+ }
+}
+
 `;
 
 export const ImageContainer = styled.div`
@@ -34,7 +48,15 @@ width: 80%;
 opacity: 0.7;
 position: absolute;
 top: 255px;
-display: none;
+display: none; 
+
+@media screen and (max-width: 800px) {
+  display: block;
+  min-width: unset;
+  padding: 0 10px;
+  opacity: 0.8;
+}
+
 `;
 
 export const CollectionFooterContainer = styled.div`
