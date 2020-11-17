@@ -1,4 +1,4 @@
-I'm building E-commerce app in React with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase
+I'm building E-commerce app in React with Redux, Stripe, Firebase. (In future I'll add GraphQL, hooks, contextAPI)
 
 [Live Demo](https://cr0wn-shop.herokuapp.com)
 
