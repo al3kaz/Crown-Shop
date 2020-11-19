@@ -7,8 +7,9 @@ export const SignInAndSignUpContainer = styled.div`
   margin: 30px auto;
 
   @media screen and (max-width: 800px) {
+    width: 80vw;
     display:block;
     text-align: center;
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 `;

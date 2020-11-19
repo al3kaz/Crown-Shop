@@ -5,10 +5,10 @@ export const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 380px;
-
+  
   @media screen and (max-width: 800px) {
-      width: 450px;
-      margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
   }
 
 `;
